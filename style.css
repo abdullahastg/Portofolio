@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+/* font-family: "Bebas Neue", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+/* font-family: "Josefin Sans", sans-serif; */
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 600px;
+    background-color: #d2d2d2;
+}
+
+.Hero {
+    background-image: url(Assets/bg.jpg), linear-gradient(to bottom, #56013a, #000000);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 70%;
+    filter: brightness(0) invert(1);
+    align-self: flex-end;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+}
+
+.grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    color: white;
+}
+
+.nick {
+    align-self: flex-end;
+    justify-self: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+    background-image: linear-gradient(to right, #9e28ff, #00ffee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+        0 0 50px #ad28ffb3,
+        0 0 50px #00f7ffb3;
+}
+.title {
+    align-self: flex-start;
+    justify-self: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+}
+
+.myimg {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+    filter: drop-shadow(0 0 50px #28d4ff53) drop-shadow(0 0 20px #ff00bf63);
+    transition: filter 0.3s ease-in-out;
+    align-self: flex-end;
+}
+
+.myimg:hover {
+    filter: drop-shadow(0 0 20px #28d4ff8a) drop-shadow(0 0 30px #ff00bf9d);
+}
+
+/* Navigator */
+
+nav {
+    display: flex;
+    height: 6vh;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+}
+nav img {
+    height: 60%;
+}
+.navItems {
+    display: flex;
+    align-items: center;
+}
+.navButton {
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 0.8em;
+    height: 6vh;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    background: none;
+    border: none;
+}
+.navButton:hover {
+    border-bottom: 3px solid #ffffff;
+    background-color: #ffffff11;
+    cursor: pointer;
+}
+
+/* sections */
+
+section {
+    min-height: 50vh;
+}
+
+/* Projects */
+#Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+}
+#featured{
+    width: 70%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.8em;
+    color: #2d2d2d;
+}
+#featured h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.7em;
+    background-image: linear-gradient(to right, #6c1dad, #ff00d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.card {
+    display: flex;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.7em;
+    box-shadow: 0 0 20px #e6e6e6;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.picture{
+    width: 50%;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: 0.3s ease;
+}
+.picture:hover {
+    transform: perspective(1000px) scale(1.1) rotateX(16deg) rotateY(-16deg);
+    box-shadow: 10px 15px 20px #2e2e2e8d;
+    border-radius: 5px;
+}
+.projText {
+    width: 50%;
+    padding: 0 10px;
+    color: #1b1b1b;
+}
+.projText h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, #c139c3, #00ffaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* About me Section */
+
+#AboutMe {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.aboutGrid {
+    display: grid;
+    width: 80%;
+    height: auto;
+    grid-template-columns: 1fr 5fr 4fr 1fr;
+}
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    background-color: #0d0d0d;
+    box-shadow: 0 0 10px rgb(28, 28, 28);
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.svg {
+    width: 30px;
+    fill: white;
+    justify-self: center;
+    transition: 0.2s;
+}
+.svg:hover {
+    transform: scale(1.1);
+    
+}
+.bio {
+    background-color: #0d0d0d;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #dddddd;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.7em;
+    padding: 0 10px;
+    height: auto;
+}
+.bio h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, #00bbff, #f700ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    color: transparent;
+    text-shadow: 
+        0 0 20px #ff28a9da,
+        0 0 20px #00f7ffb6;
+}
+.image {
+    display: flex;
+    background-color: #0d0d0d;
+    border-radius: 5px;
+    margin: 0 5px 0 0;
+    height: auto;
+}
+.image img {
+    width: 100%;
+    align-self: flex-end;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    background-color: #0d0d0d;
+    box-shadow: 0 0 10px rgb(28, 28, 28);
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+/* Contact me Section */
+
+#ContactMe {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 15vh;
+}
+.contactFlex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    width: 70%;
+    height: 80%;
+}
+.socials2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 30%;
+    height: 100%;
+    gap: 10px;
+}
+
+.socialsCard1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #0077b5, #00a6d6);
+    transition: 0.1s;
+    border-radius: 5px;
+}
+.socialsCard2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #24292e, #24292e);
+    transition: 0.1s;
+    border-radius: 5px;
+}
+.socialsCard1:hover, .socialsCard2:hover {
+    transform: scale(1.1);
+}
+.contactForm {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: #0d0d0d;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 65%;
+    height: 100%;
+    border-radius: 5px;
+}
+.contactForm h1 {
+    margin: 0;
+}
+
+#ContactFormArea {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#ContactFormArea input:not(#submitBtn):not(#MessageArea){
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.5em;
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#MessageArea {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.5em;
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    height: 60px;
+}
+#submitBtn {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.7em;
+    width: 100px;
+    height: 20px;
+    align-self: center;
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Footer  */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.7em;
+}
