@@ -3,12 +3,14 @@
         min-width: auto;
     }    
     .Hero{
-        height: 89vh;
+        height: 85vh;
+    }
+    .hero {
+        height: 80vh;
     }
     nav {
         height: 6vh;
     }
-
     .grid {
         width: 80%;
         display: grid;
