@@ -272,6 +272,7 @@ section {
     box-shadow: 0 0 10px rgb(28, 28, 28);
     padding-top: 10px;
     border-radius: 5px;
+    align-items: center;
 }
 
 /* Contact me Section */
