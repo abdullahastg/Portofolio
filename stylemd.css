@@ -1,0 +1,49 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Hero{
+        height: 94vh;
+    }
+    nav {
+        height: 6vh;
+    }
+
+    .nick {
+        font-size: 40px;
+    }
+    .title {
+        font-size: 16px;  
+    }
+    .navButton {
+        font-size: 14px;  
+    }
+    #featured {
+        font-size: 14px;  
+    }
+    #featured h1 {
+        font-size: 24px;  
+    }
+    .card {
+        font-size: 14px;  
+    }
+    .projText h1 {
+        font-size: 22px;  
+    }
+    .bio {
+        font-size: 14px;  
+    }
+    .bio h1 {
+        font-size: 24px;  
+    }
+    .contactForm {
+        font-size: 24px;  
+    }
+    #ContactFormArea input:not(#submitBtn):not(#MessageArea),
+    #MessageArea {
+        font-size: 14px;  
+    }
+    #submitBtn {
+        font-size: 16px; 
+    }
+    footer {
+        font-size: 12px; 
+    }
+}
