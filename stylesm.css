@@ -119,6 +119,16 @@
         width: 100%;
         height: 80%;
     }
+    .contactForm h1 {
+        font-size: 15px;
+        width: 90%;
+    }
+    .contactForm h1:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    #ContactFormArea {
+        width: 90%;
+    }
     #ContactFormArea input:not(#submitBtn):not(#MessageArea),
     #MessageArea {
         font-size: 12px;
